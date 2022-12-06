@@ -45,3 +45,12 @@ yarn start
 The app should be available via [http://localhost:3000](http://localhost:3000).
 
 Good luck and talk soon!
+
+
+## Answers to the questions
+
+- It would be much better implemented if we could add some kind of fuzzy search for the parameters mentioned so that we won't have to match exactly the words. Using something like elasticsearch to handle the text search would help with that quite a bit. In the task I implemented the search criteria for each parameter separately, however we could use 1 keyword to search across all parameters at once. It would help broaden the search but would limit the functionality of the application as we would not have extra filtering with more than one parameter. Other than those 2 points, with the pagination we did in place, the API would be ready for production.
+
+- In order to scale this for high amounts of traffic, we would need to deploy the API on multiple web servers to handle multiple requests at once. Also, it would benefit us to index the search parameters in order to increase the speed of the search queries. We should optimize the queries and make sure they aren't very complicated and don't take much time to process. Setting up a cache would help us in decreasing the latency time of APIs. Finally reducing the number of results per page would improve the speed of the request and as a result improve scalability.
+
+- I think the most important part in working remotely is communication. Sometimes with fully remote teams people take for granted the importance of teamwork and good team communication. With software developers in particular, not all people value the social aspect of the job. However, when you focus on your team as much as you do on your own work, the overall productivity is multiplied quite a bit. That's why I like to help people as much as I could, learn from other developers who might know more than I do in certain aspects and interact as much as possible with everybody in the team in order to build a relationship to improve the overall work environment and productivity. One more thing I found to be very important is the onboarding for new team members. If there is some kind of onboarding process in place it helps a lot to accelarate the start of the contribution to the team and helps the new members hit the floor running as soon as possible.
